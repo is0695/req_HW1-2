@@ -37,7 +37,7 @@ class YaUploader:
         if response.status_code == 201:
             print("Success")
 if __name__ == '__main__':
-    TOKEN = "y0_AgAAAAAN_y2xAADLWwAAAADdt9rIC9uXbxxpTluxoPjOCDUc0DVkSO0"
+    TOKEN = ""
     ya = YaUploader(token=TOKEN)
     ya._get_upload_link("Netology/test1.txt")
     ya.upload_file_to_disk("Netology/test1.txt", "test.txt")
